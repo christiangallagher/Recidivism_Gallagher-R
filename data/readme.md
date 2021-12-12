@@ -1,3 +1,7 @@
-# Data
-- __Data Link:__ 
+# Dataset
+- __Link to Dataset:__ 
 https://data.ojp.usdoj.gov/Courts/NIJ-s-Recidivism-Challenge-Full-Dataset/ynf5-u8nk
+
+- __Variables:__ There were 54 variables to look at. They were : ID, Gender, Race, Age_at_Release, Residence_PUMA, Gang_Affiliated, Supervision_Risk_Score_First, Supervision_Level_First, Education_Level, Dependents, Prison_Offense, Prison_Years, Prior_Arrest_Episodes_Felony, Prior_Arrest_Episodes_Misd, Prior_Arrest_Episodes_Violent, Prior_Arrest_Episodes_Property, Prior_Arrest_Episodes_Drug, Prior_Arrest_Episodes_PPViolationCharges, Prior_Arrest_Episodes_DVCharges, Prior_Arrest_Episodes_GunCharges, Prior_Conviction_Episodes_Felony, Prior_Conviction_Episodes_Misd, Prior_Conviction_Episodes_Viol, Prior_Conviction_Episodes_Prop, Prior_Conviction_Episodes_Drug, Prior_Conviction_Episodes_PPViolationCharges, Prior_Conviction_Episodes_DomesticViolenceCharges, Prior_Conviction_Episodes_GunCharges, Prior_Revocations_Parole, Prior_Revocations_Probation, Condition_MH_SA, Condition_Cog_Ed, Condition_Other, Violations_ElectronicMonitoring, Violations_Instruction, Violations_FailToReport, Violations_MoveWithoutPermission, Delinquency_Reports, Program_Attendances, Program_UnexcusedAbsences, Residence_Changes, Avg_Days_per_DrugTest, DrugTests_THC_Positive, DrugTests_Cocaine_Positive, DrugTests_Meth_Positive, DrugTests_Other_Positive, Percent_Days_Employed, Jobs_Per_Year, Employment_Exempt, Recidivism_Within_3years, Recidivism_Arrest_Year1, Recidivism_Arrest_Year2, Recidivism_Arrest_Year3, Training_Sample.
+
+I only chose to look at a couple variables such as race, gender, age of release, education level, prison years, and prison offense. 
