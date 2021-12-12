@@ -26,10 +26,3 @@
 
 - https://innocenceproject.org/exonerations-data/
 
-
-
-## Github pages
-
-It would help if you took the time to publish your repo for easier viewing of the files.  Please follow the directions at [Github pages](https://pages.github.com/) to build your pages footprint on the internet.
-
-
