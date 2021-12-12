@@ -5,9 +5,10 @@
 - __Tools used:__ I uesed R to make the graphics. Packages I used were tidyverse, ggplot2, and dbplyr. 
 
 
-- __Results:__ 
+- __Results:__ I first made a graphic that was grouped by race and showed the age of release. I noticed right away that the black male inmates showed higher numbers than white male inmates. The highest number of inmates where in the black male group that were released at the age of 23 to 27. 
 ![Viz1](https://user-images.githubusercontent.com/89158977/145720296-1bd9dc66-95bf-4b17-a26c-6caf3445e8e9.png)
-
+I then made a heat map to look at the recidivism within 3 years of release compared to education level. The white inmates showed an equal spread across recidivism and education level. While the black inmates showed a higher recidivism rates in the less educated groups. The black inmates had a higher number of inmates not commiting crimes in the higher education group than white inmates.  
+![Viz2](https://user-images.githubusercontent.com/89158977/145720681-0b3bef04-5f54-4702-9a39-2bc3db02cbdd.png)
 
 
 
