@@ -2,7 +2,7 @@
 - __Project Purpose:__ I originally picked this data to use for a statistics class I took over the summer. I wanted to find data that had time served to see if it was more likly for white inmates to get shorter sentencing than black inmates. My goal for the project was to look at the racial bias that is in the criminal justice system. Originally when I explored the data I did not use the proprotional population to black and white people in America. I onlt looked at the raw numbers and it was not as I expected. Once we had started project 2 where we looked at the suicide numbers using the percentage of the population for each race I took that knowledge and applied it to this data. The graphics now clearly showed what I assumed from the beginning to be true. This work was solely done for my own interest in the court system. 
 
 
-- __Tools used:__ I uesed R to make the graphics. Packages I used were tidyverse, ggplot2, treemap, and dbplyr. 
+- __Tools used:__ I uesed R to make the graphics. Packages I used were tidyverse, ggplot2, treemap, and dbplyr. [R Code](https://github.com/christiangallagher/Recidivism_Gallagher-R/blob/6c1e0cb636409e65ecfbae6e1bd8f30eb4dcc0c8/scripts/Recidivism-Gallagher.R)
 
 
 - __Results:__ 
