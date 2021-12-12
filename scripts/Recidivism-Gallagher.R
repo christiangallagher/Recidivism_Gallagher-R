@@ -2,11 +2,11 @@ library(tidyverse)
 library(ggplot2)
 library(dbplyr)
 library(treemap)
-library(d3treeR)
 
 
-df <- read.csv(file = '/Users/christiangallagher/Documents/STAT 4490/Recidivism_Gallagher-R/NIJ_s_Recidivism_Challenge_Full_Dataset.csv')
+df <- read.csv(file = '/Users/christiangallagher/Documents/STAT 4490/Recidivism_Gallagher-R/data/NIJ_s_Recidivism_Challenge_Full_Dataset.csv')
 df$Gender = ifelse(df$Gender == "F", "Female", ifelse(df$Gender == "M", "Male", NA))
+
 data_pop <- tibble(
   Race = c("BLACK", "WHITE"), 
   N =  331449281 *c(.124, .616))
@@ -82,5 +82,28 @@ pl<- treemap(k,
           c("right", "bottom")))
 
 dev.off()
+
+df %>%
+  group_by(Gender, Race, Prison_Offense) %>%
+  summarize(n = n()) %>%
+  ungroup()
+
+(data_counts <- df %>%
+    count(Gender, Race, Prison_Offense))
+
+z <- data_counts %>%
+  left_join(data_pop, by = "Race")
+
+z%>%
+  ggplot(aes(x = Prison_Offense, y = (n/N)*100, color = Race)) + geom_point() +
+  geom_line(aes(group = Race)) + facet_grid(cols = vars(Gender)) +
+  labs(x = "Prison Offense", y = "Proportional Population", 
+       title = "2021 Inmates Prison Offense Grouped by Race" ) + 
+  theme_bw() + theme(plot.title = element_text(hjust = 0.5), 
+                     axis.text.x = element_text(angle = 90))
+
+ggsave("Viz3.png",width=15,units = "in")
+
+
 
   
