@@ -18,6 +18,7 @@ jfkjnrfkjnerkfner
 ![tree](https://user-images.githubusercontent.com/89158977/145725573-ab078a9f-4706-4919-838c-0136a21301fe.png)
 
 
+![Viz3](https://user-images.githubusercontent.com/89158977/145727729-7cc725d1-85bf-4cc8-869b-78f4512a421c.png)
 
 
 - __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
