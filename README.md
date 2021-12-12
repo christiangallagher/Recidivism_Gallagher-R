@@ -22,10 +22,10 @@
 
 ![Viz3](https://user-images.githubusercontent.com/89158977/145727729-7cc725d1-85bf-4cc8-869b-78f4512a421c.png)
 
+- Overall I think its obvious that black people are incarcerated at a higher rate than white people, which does not make sense considering how marginal the black population is to the white population. I think it's important to look into the racial bias of the judicial system so people stop getting convicted based on their race. Inmates seemed to get sentensed to 1-2 years at a higher rate regardless of their race which is something I did not expect. In the future I would like to look at death row inmates and see what that population looks like. The link below is to the inncocence project which is an orginization that tries to help wrongfully convicted innmates get release from prison. 
 
-- __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
-- __Tools used:__ Provide an overview of the programming languages and packages you leveraged for this work.  You could provide links to the pertinent reading material that you leveraged to complete the job. Provide links to your final scripts stored in your repository.
-- __Results:__ This is your conclusion.  Explain why your work matters.  How could others use it?  What are your next steps? Show some key findings.
+- https://innocenceproject.org/exonerations-data/
+
 
 ## Folder structure
 
