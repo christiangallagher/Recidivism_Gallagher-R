@@ -13,6 +13,9 @@ I then made a heat map to look at the recidivism within 3 years of release compa
 
 ![Viz2](https://user-images.githubusercontent.com/89158977/145720681-0b3bef04-5f54-4702-9a39-2bc3db02cbdd.png)
 
+jfkjnrfkjnerkfner
+
+![tree](https://user-images.githubusercontent.com/89158977/145725393-deda77d8-c86a-45cc-bf19-b161847b2bbb.png)
 
 
 - __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
