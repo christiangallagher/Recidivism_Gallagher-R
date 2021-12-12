@@ -1,7 +1,11 @@
 library(tidyverse)
 library(ggplot2)
 library(dbplyr)
-df <- read.csv(file = '~/Documents/NIJ_s_Recidivism_Challenge_Full_Dataset.csv')
+library(treemap)
+library(d3treeR)
+
+
+df <- read.csv(file = '/Users/christiangallagher/Documents/STAT 4490/Recidivism_Gallagher-R/NIJ_s_Recidivism_Challenge_Full_Dataset.csv')
 df$Gender = ifelse(df$Gender == "F", "Female", ifelse(df$Gender == "M", "Male", NA))
 data_pop <- tibble(
   Race = c("BLACK", "WHITE"), 
@@ -25,6 +29,8 @@ l %>%
        title = "2021 Inmates Showing Age of Release Grouped by Race" ) + 
   theme_bw() + theme(plot.title = element_text(hjust = 0.5), 
                      axis.text.x = element_text(angle = 90))
+
+ggsave("Viz1.png",width=15,units = "in")
                                             
 df %>%
   group_by(Gender, Race, Education_Level, Recidivism_Within_3years) %>%
@@ -45,14 +51,36 @@ m %>%
        title = "2021 Inmate Recidivism Rate By Education Level", fill = "Prop. Population") + 
   theme(plot.title = element_text(hjust = 0.5))
 
+ggsave("Viz2.png",width=15,units = "in")
 
 df %>%
-  group_by(Gender, Race, Education_Level, Recidivism_Within_3years, Prison_Years) %>%
+  group_by(Gender, Race, Education_Level, Prison_Years) %>%
   summarize(n = n()) %>%
   ungroup()
 
 (data_counts <- df %>%
-    count(Gender, Race, Education_Level, Recidivism_Within_3years, Prison_Years))
+    count(Gender, Race, Education_Level, Prison_Years))
 
 k <- data_counts %>%
   left_join(data_pop, by = "Race")
+
+k$size <-(k$n/k$N)*100
+
+png(filename="tree.png",width=1000, height=1000)  
+pl<- treemap(k,
+        index = c("Education_Level","Prison_Years", "Race"),
+        vSize = "size",
+        vColor = "size",
+        type = "value",
+        title.legend = "Proportion of the Population",
+        title = "2021 Inmates",
+        fontsize.legend = 8,
+        fontsize.labels = 8,
+        force.print.labels = TRUE,
+        align.labels=list(
+          c("center", "center"), 
+          c("right", "bottom")))
+
+dev.off()
+
+  
